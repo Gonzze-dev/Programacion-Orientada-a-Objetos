@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MapaMundi 
 {
 
-	public static void Menu(MapaMundial obj_Mapa_Mundial, Scanner escaner)
+	public static void menu(MapaMundial obj_Mapa_Mundial, Scanner escaner)
 	{
 		int opcion = 0;
 		String nombre = "", listado_Paises = "", listado_Provincias = "";
@@ -65,7 +65,7 @@ public class MapaMundi
 		
 		do 
 		{
-			Menu(obj_Mapa_Mundial, escaner);
+			menu(obj_Mapa_Mundial, escaner);
 			
 			System.out.print("\n¿Volver a realizar la operacion? (Y/N): ");
 			opcion = escaner.nextLine().toLowerCase();
@@ -73,5 +73,5 @@ public class MapaMundi
 		} while (opcion.equals("y"));
 			
 	}
-
+	
 }

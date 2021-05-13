@@ -17,16 +17,10 @@ public class Continente
 		super();
 		this.nombre_Continente = nombre_Continente;
 	}
-
 	
 	public String get_Nombre_Continente()
 	{
 		return this.nombre_Continente;
-	}
-	
-	public void set_Nombre_Continente(String nombre_Continente)
-	{
-		this.nombre_Continente = nombre_Continente;
 	}
 	
 	public Pais get_Pais(int indice)
@@ -39,12 +33,12 @@ public class Continente
 		return this.lista_Paises;
 	}
 	
-	public void añadir_Pais(Pais obj_Pais)
+	public void set_Nombre_Continente(String nombre_Continente)
 	{
-		this.lista_Paises.add(obj_Pais);
+		this.nombre_Continente = nombre_Continente;
 	}
 	
-	public void añadir_Paises(String[] array_Nombre_Paises)
+	public void set_Paises(String[] array_Nombre_Paises)
 	{
 		for (int  i = 0; i < array_Nombre_Paises.length; i++)
 		{
